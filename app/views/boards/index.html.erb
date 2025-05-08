@@ -31,16 +31,12 @@
 </div>
 
 <hr>
-<div>
-  <div>
-    <% @list_of_boards.each do |a_board| %>
-      <ul>
-        <li>
-          <a href="/boards/<%= a_board.id %>"> <%= a_board.name %> </a>
-        </li>
-      </ul>
-    <% end %>
-</div>
-</div>
+<ul>
+  <% @list_of_boards.each do |a_board| %>
+    <li>
+      <a href="/boards/<%= a_board.id %>"> <%= a_board.name %> </a>
+    </li>
+  <% end %>
+</ul>
 
 <hr>
